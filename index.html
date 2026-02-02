@@ -224,36 +224,7 @@
                     type="video/mp4">
           </video>
         </div>
-        <!-- <div class="item item-nerf_llff_horns">
-          <video poster="" id="nerf_llff_horns" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/nerf_llff_horns.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-img_pluto">
-          <video poster="" id="img_pluto" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/img_pluto.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-sdf_david">
-          <video poster="" id="sdf_david" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/sdf_david.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-nerf_syn_mic">
-          <video poster="" id="nerf_syn_mic" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/nerf_syn_mic.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-nerf_llff_flower">
-          <video poster="" id="nerf_llff_flower" autoplay controls muted loop playsinline height="100%">
-            <source src="./videos/nerf_llff_flower.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
+
       </div>
     </div>
     <div  class="columns is-centered has-text-centered" style="text-align: center;">  
@@ -345,14 +316,14 @@
           <h3 class="title is-4">Quantitative Comparison</h3>
 
           <center>
-            <img src="./static/images/quantitative_metric.png"  width="500">
+            <img src="./static/images/quantitative_metric.png"  width="1000">
           </center>
           <br>
           <h3 class="title is-4">Subjective Comparison</h3>
           <style>
             .grid-container {
               display: grid;
-              grid-template-columns: repeat(2, 1fr); /* Creates 2 columns with equal width */
+              grid-template-columns: repeat(3, 1fr); /* Creates 2 columns with equal width */
               grid-gap: 10px; /* Adjust the gap between the divs */
             }
             .grid-item {
@@ -363,27 +334,36 @@
           <br>
           <div class="grid-container">
             <div class="grid-item">
-              <div class="compare" style="width: 467px; margin-right: 20px;">
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen_pixelsplat.png" />
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen_mvsplat.png" />
+              <div class="compare" style="width: 300px; margin-right: 20px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen_pixelsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen_surfsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div class="compare" style="width: 467px;">
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen_depthsplat.png" />
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen_surfsplat.png" />
+              <div class="compare" style="width: 300px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen_mvsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen_surfsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div>
-                <span style="display: inline; text-align: left; margin-right: 335px;"><b>pixelSplat; MVSplat;</b></span>
-                <!-- <span style="display: inline; text-align: right;"><b>Ours</b></span> -->
+              <div class="compare" style="width: 300px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen_depthsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen_surfsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div>
-                <span style="display: inline; text-align: left; margin-right: 340px;"><b> DepthSplat; SurfSplat</b></span>
-                <!-- <span style="display: inline; text-align: right;"><b>Ours</b></span> -->
+              <div class="text-label">
+                <b>pixelSplat</b> vs <b>SurfSplat</b>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="text-label">
+                <b>MVSplat</b> vs <b>SurfSplat</b>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="text-label">
+                <b>DepthSplat</b> vs <b>SurfSplat</b>
               </div>
             </div>
           </div>
@@ -391,28 +371,36 @@
           <br>
           <div class="grid-container">
             <div class="grid-item">
-              <div class="compare" style="width: 467px; margin-right: 20px;">
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen2_pixelsplat.png" />
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen2_mvsplat.png" />
+              <div class="compare" style="width: 300px; margin-right: 20px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen2_pixelsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen2_surfsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div class="compare" style="width: 467px;">
-
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen2_depthsplat.png" />
-                <img class="slider-image" style="width: 467px" src="./static/images/kitchen2_surfsplat.png" />
+              <div class="compare" style="width: 300px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen2_mvsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen2_surfsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div>
-                <span style="display: inline; text-align: left; margin-right: 335px;"><b>pixelSplat; MVSplat;</b></span>
-                <!-- <span style="display: inline; text-align: right;"><b>Ours</b></span> -->
+              <div class="compare" style="width: 300px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen2_depthsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/kitchen2_surfsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div>
-                <span style="display: inline; text-align: left; margin-right: 340px;"><b> DepthSplat; SurfSplat</b></span>
-                <!-- <span style="display: inline; text-align: right;"><b>Ours</b></span> -->
+              <div class="text-label">
+                <b>pixelSplat</b> vs <b>SurfSplat</b>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="text-label">
+                <b>MVSplat</b> vs <b>SurfSplat</b>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="text-label">
+                <b>DepthSplat</b> vs <b>SurfSplat</b>
               </div>
             </div>
           </div>
@@ -421,25 +409,36 @@
           <br>
           <div class="grid-container">
             <div class="grid-item">
-              <div class="compare" style="width: 467px; margin-right: 20px;">
-                <img class="slider-image" style="width: 467px" src="./static/images/bathroom_depthsplat.png" />
-                <img class="slider-image" style="width: 467px" src="./static/images/bathroom_depth_depthsplat.png" />
+              <div class="compare" style="width: 300px; margin-right: 20px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/bathroom_mvsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/bathroom_depth_mvsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div class="compare" style="width: 467px;">
-                <img class="slider-image" style="width: 467px" src="./static/images/bathroom_surfsplat.png" />
-                <img class="slider-image" style="width: 467px" src="./static/images/bathroom_depth_surfsplat.png" />
+              <div class="compare" style="width: 300px; margin-right: 20px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/bathroom_depthsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/bathroom_depth_depthsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div>
-                <span style="display: inline; text-align: left; margin-right: 360px;"><b>DepthSplat</b></span>
+              <div class="compare" style="width: 300px;">
+                <img class="slider-image" style="width: 300px" src="./static/images/bathroom_surfsplat.png" />
+                <img class="slider-image" style="width: 300px" src="./static/images/bathroom_depth_surfsplat.png" />
               </div>
             </div>
             <div class="grid-item">
-              <div>
-                <span style="display: inline; text-align: left; margin-right: 360px;"><b>SurfSplat</b></span>
+              <div class="text-label">
+                <b>MVSplat</b>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="text-label">
+                <b>DepthSplat</b>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="text-label">
+                <b>SurfSplat</b>
               </div>
             </div>
           </div>
