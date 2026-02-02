@@ -88,24 +88,39 @@ $(document).ready(function() {
 			autoplaySpeed: 3000,
     }
 
-		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
-    // var carousels = bulmaCarousel.attach('.carousel', {
-    //   slidesToScroll: 1,
-    //   slidesToShow: 1,
-    //   pagination: false,
-    //   loop: false,      // 关键修改：禁止循环
-    //   infinite: false,  // 关键修改：禁止无限滚动（防止视频被克隆/销毁）
-    //   autoplay: true,   // 开启自动轮播切换
-    //   autoplaySpeed: 3000, // 切换速度（3秒）
-    // });
-    // Loop on each carousel initialized
+		// // Initialize all div with carousel class
+    // var carousels = bulmaCarousel.attach('.carousel', options);
+
+    // // Loop on each carousel initialized
+    // for(var i = 0; i < carousels.length; i++) {
+    // 	// Add listener to  event
+    // 	carousels[i].on('before:show', state => {
+    // 		console.log(state);
+    // 	});
+    // }
+
+    var carousels = bulmaCarousel.attach('.carousel', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        pagination: false,
+        loop: true,       
+        infinite: true,   
+        autoplay: false,  
+        autoplaySpeed: 3000,
+    });
+
     for(var i = 0; i < carousels.length; i++) {
-    	// Add listener to  event
-    	carousels[i].on('before:show', state => {
-    		console.log(state);
-    	});
-    }
+        carousels[i].on('after:show', state => {
+            let activeSlide = state.target.querySelector('.item.is-active');
+            if (activeSlide) {
+                let video = activeSlide.querySelector('video');
+                if (video) {
+                    video.play().catch(e => console.log("Play error:", e));
+                }
+            }
+        });
+}
+
 
     // Access to bulmaCarousel instance of an element
     var element = document.querySelector('#my-element');
