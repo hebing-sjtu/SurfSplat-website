@@ -234,6 +234,23 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Teaser</h2>
+        <div class="content has-text-justified">
+          <b>SurfSplat</b> is a feedforward network that predicts a 3D scene representation from sparse images input.
+          Previous methods often produce sparse, color-biased pointclouds that lack surface continuity, especially under close-up views. 
+          In contrast, our SurfSplat approach utilizes 2DGS with a surface continuity prior and forced alpha blending to generate coherent and realistic 3D surfaces.
+          <br> <br>
+          <center>
+            <img src="./static/images/teaser.png"  width="100%">
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <br>
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -268,19 +285,12 @@
     </div> -->
     <!--/ Paper video. -->
 
+
     <br>
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
-          <b>SurfSplat</b> is a feedforward network that predicts a 3D scene representation from sparse images input.
-          Previous methods often produce sparse, color-biased pointclouds that lack surface continuity, especially under close-up views. 
-          In contrast, our SurfSplat approach utilizes 2DGS with a surface continuity prior and forced alpha blending to generate coherent and realistic 3D surfaces.
-          <br> <br>
-          <center>
-            <img src="./static/images/teaser.png"  width="100%">
-          </center>
-        <br> 
         Given sparse input images, our dual-path encoder processes them through both single-view and multi-view branches. The fused features are passed through a U-Net to predict intermediate attributes, including depth, scale multipliers, and appearance components. Finally, these intermediates are converted into standard Gaussian attributes using our surface continuity prior and forced alpha blending strategy. <br> <br>
         <center>
           <img src="./static/images/pipeline.png"  width="100%">
