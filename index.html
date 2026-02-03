@@ -252,7 +252,7 @@
 <section class="section">
   <div class="container is-max-desktop">
 
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Teaser</h2>
         <div class="content has-text-justified">
@@ -260,26 +260,26 @@
           Previous methods often produce sparse, color-biased pointclouds that lack surface continuity, especially under close-up views. 
           In contrast, our SurfSplat approach utilizes 2DGS with a surface continuity prior and forced alpha blending to generate coherent and realistic 3D surfaces.
           <br> <br>
-          <center>
-            <img src="./static/images/teaser.png"  width="100%">
-          </center>
         </div>
       </div>
     </div>
 
-    <br>
+    <br> -->
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
+          <center>
+            <img src="./static/images/teaser.png"  width="100%">
+          </center>
           <p>
             Reconstructing 3D scenes from sparse images remains a challenging task due to the difficulty of recovering accurate geometry and texture without optimization.
             Recent approaches leverage generalizable models to generate 3D scenes using 3D Gaussian Splatting (3DGS) primitive. 
             However, they often fail to produce continuous surfaces and instead yield discrete, color-biased point clouds that appear plausible at normal resolution but reveal severe artifacts under close-up views. 
           </p>
           <p>
-            To address this issue, we present SurfSplat, a feedforward framework based on 2D Gaussian Splatting (2DGS) primitive, which provides stronger anisotropy and higher geometric precision. By incorporating a surface continuity prior and a forced alpha blending strategy, SurfSplat reconstructs coherent geometry together with faithful textures.
+            To address this issue, we present <b>SurfSplat</b>, a feedforward framework based on <b>2D Gaussian Splatting (2DGS)</b> primitive, which provides stronger anisotropy and higher geometric precision. By incorporating a surface continuity prior and a forced alpha blending strategy, SurfSplat reconstructs coherent geometry together with faithful textures.
           </p>
           <p>
             Furthermore, we introduce High-Resolution Rendering Consistency (HRRC), a new evaluation metric designed to evaluate high-resolution reconstruction quality. Extensive experiments on RealEstate10K, DL3DV, and ScanNet demonstrate that SurfSplat consistently outperforms prior methods on both standard metrics and HRRC, establishing a robust solution for high-fidelity 3D reconstruction from sparse inputs.
